@@ -17,6 +17,8 @@ public class BackendApplication {
 
     private Log log = LogFactory.getLog(BackendApplication.class);
 
+    private String catPic = "http://i.imgur.com/1uYroRF.gif";
+
     public static void main(String[] args) {
         SpringApplication.run(BackendApplication.class, args);
     }
@@ -31,7 +33,7 @@ public class BackendApplication {
         private String message;
 
         public Message() {
-          this.message = "http://i.imgur.com/1uYroRF.gif";
+          this.message = catPic;
         }
 
         public String getMessage() {

@@ -26,7 +26,7 @@ public class FrontendApplication {
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String catsOrDogs(Model model) {
       Message response = backendClient.cats();
-      model.addAttribute("catsOrDogs",response.getMessage());
+      model.addAttribute("catsOrDogs", response.getMessage());
       return "cats-or-dogs";
     }
 }

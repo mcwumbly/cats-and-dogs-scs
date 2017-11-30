@@ -20,6 +20,8 @@ public class BackendClient {
 
   private Log log = LogFactory.getLog(BackendClient.class);
 
+  private String dogPic = "http://i2.kym-cdn.com/photos/images/original/000/234/765/b7e.jpg";
+
   @Autowired
   private RestTemplate rest;
 
@@ -47,6 +49,6 @@ public class BackendClient {
   }
 
   Message dogs() {
-    return new Message("http://i2.kym-cdn.com/photos/images/original/000/234/765/b7e.jpg", true);
+    return new Message(dogPic);
   }
 }
