@@ -1,0 +1,12 @@
+---
+instances: 1
+memory: 1G
+applications:
+  - name: frontend
+    path: build/libs/frontend-0.0.1-SNAPSHOT.jar
+    random-route: true
+    services:
+      - service-registry
+      - circuit-breaker
+    env:
+      SPRING_PROFILES_ACTIVE: dev

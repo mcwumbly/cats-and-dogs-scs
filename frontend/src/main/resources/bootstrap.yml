@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: frontend
+
+server:
+  port: 8082
+
+producer:
+  ribbon:
+    ServerListRefreshInterval: 5000
+ribbon:
+  IsSecure: false
+
+  profiles: dev
+
+management:
+  security:
+    enabled: false
